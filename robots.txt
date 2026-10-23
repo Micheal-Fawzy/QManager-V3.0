@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap for Googlebot & Bingbot
+Sitemap: https://qmanager.github.io/sitemap.xml
