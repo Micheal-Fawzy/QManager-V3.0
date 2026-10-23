@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="QManager | دليل ومنصة حصر الكميات الذكية داخل AutoCAD" />
   <meta property="og:description" content="حول خطوط الأوتوكاد إلى عناصر حصر ذكية محفوظة بـ XData مع لوحة تحكم لحظية وتقارير إكسيل مفصلة بضغطة زر. اطلب تجربة مجانية لمدة 30 يوماً." />
-  <meta property="og:image" content="Picture2.png" />
+  <meta property="og:image" content="images/Picture2.png" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -445,23 +445,6 @@
       display: inline-block;
     }
 
-    /* Missing image placeholder box */
-    .missing-img-box {
-      width: 100%;
-      min-height: 260px;
-      border: 2px dashed var(--amber);
-      background: rgba(245, 158, 11, 0.06);
-      border-radius: 14px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      text-align: center;
-      color: #fcd34d;
-    }
-
-    /* Modal for Google Form 30-Day Demo */
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -482,19 +465,19 @@
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: 20px;
-      max-width: 680px;
+      max-width: 760px;
       width: 100%;
       max-height: 90vh;
       overflow-y: auto;
-      padding: 32px;
+      padding: 24px;
       position: relative;
       box-shadow: 0 25px 60px rgba(0,0,0,0.8);
     }
 
     .modal-close {
       position: absolute;
-      top: 18px;
-      left: 18px;
+      top: 12px;
+      left: 12px;
       background: rgba(255,255,255,0.08);
       border: none;
       color: #fff;
@@ -505,25 +488,13 @@
       cursor: pointer;
     }
 
-    .form-group {
-      margin-bottom: 16px;
-    }
-
-    .form-group label {
+    .google-form-frame {
       display: block;
-      margin-bottom: 6px;
-      font-weight: 700;
-      font-size: 0.92rem;
-    }
-
-    .form-group input, .form-group select, .form-group textarea {
       width: 100%;
-      padding: 12px 14px;
+      height: min(72vh, 720px);
+      border: 0;
       border-radius: 10px;
-      border: 1px solid var(--border);
-      background: #0b0f19;
-      color: #fff;
-      font-family: inherit;
+      background: #fff;
     }
 
     footer {
@@ -563,9 +534,9 @@
         <a href="#commands">دليل الأوامر</a>
         <a href="#activation">التفعيل دون إنترنت</a>
       </nav>
-      <button class="btn btn-primary" onclick="openDemoModal()">
+      <a class="btn btn-primary" href="https://forms.gle/FWM8Jz4HBz6ASZHDA" onclick="openDemoForm(event)">
         🔒 اطلب تجربة مجانية 30 يوماً
-      </button>
+      </a>
     </div>
   </header>
 
@@ -583,9 +554,9 @@
           يحفظ <strong>QManager</strong> بيانات الحصر مباشرة على عناصر الرسم باستخدام <strong>XData</strong>. ارسم أو أسند الخصائص للتشطيبات المعمارية، الحوائط، الإنشاءات، والأعمال الكهروميكانيكية، وراجع الكميات لحظياً في اللوحة المباشرة وأنشئ تقارير <strong>Excel</strong> مباشرة دون الحاجة لملف CSV وسيط.
         </p>
         <div class="hero-actions">
-          <button class="btn btn-primary" onclick="openDemoModal()">
+          <a class="btn btn-primary" href="https://forms.gle/FWM8Jz4HBz6ASZHDA" onclick="openDemoForm(event)">
             📋 التسجيل لطلب نسخة تجريبية (30-Day Demo)
-          </button>
+          </a>
           <a href="#modules" class="btn btn-outline">
             استعراض شرح الوحدات بالصور
           </a>
@@ -611,7 +582,7 @@
 
       <!-- Main Menu Hub Image -->
       <div class="hero-showcase">
-        <img src="Picture1.png" alt="القائمة الرئيسية لبرنامج QManager - Hub Main Menu" />
+        <img src="images/Picture1.png" alt="القائمة الرئيسية لبرنامج QManager - Hub Main Menu" />
         <div class="img-caption">
           شكل (1): النافذة الافتتاحية للبرنامج (Hub / Main Menu) وتوجيه الوحدات الأربع وأدوات المشروع
         </div>
@@ -644,19 +615,19 @@
             <li><strong>نسخ سريع وبحث ذكي:</strong> اضغط إجمالي أي مجموعة أو قيمة الردم لنسخ الرقم مباشرة، أو ابحث باسم البند واستخدم زر الهدف لتحديد العناصر المفلترة في اللوحة فوراً.</li>
             <li><strong>إعدادات التصدير والوحدات (أيقونة الترس):</strong> اختيار وحدة الرسم (<code>mm</code> أو <code>m</code>) وحفظها داخل الـ DWG، إدخال اسم معد التقرير (<code>Prepared By</code>)، واختيار نوع التقرير (<code>ملخص Summary</code> أو <code>تفصيلي Detailed</code>)، وفتح نافذة <strong>إدارة الفتحات (Openings Manager)</strong>.</li>
           </ul>
-          <button class="btn btn-primary" onclick="openDemoModal()">اطلب تجربة اللوحة المباشرة الآن</button>
+          <a class="btn btn-primary" href="https://forms.gle/FWM8Jz4HBz6ASZHDA" onclick="openDemoForm(event)">اطلب تجربة اللوحة المباشرة الآن</a>
         </div>
 
         <div class="feature-media">
           <div class="sub-images-grid">
             <div>
-              <img src="Picture2.png" alt="لوحة التحكم المباشرة في QManager" />
+              <img src="images/Picture2.png" alt="لوحة التحكم المباشرة في QManager" />
               <div class="img-caption">شكل (2): البانل المباشر بكميات الحفر والردم والأساسات</div>
             </div>
             <div>
-              <img src="Picture3.png" alt="إعدادات البانل والتصدير ووحدات الرسم" />
+              <img src="images/Picture3.png" alt="إعدادات البانل والتصدير ووحدات الرسم" />
               <div class="img-caption">إعدادات البانل والتصدير وإدارة الفتحات</div>
-              <img src="Picture4.png" alt="وحدة العد Count Module في QManager" style="margin-top: 14px;" />
+              <img src="images/Picture4.png" alt="وحدة العد Count Module في QManager" style="margin-top: 14px;" />
               <div class="img-caption">تبويب العد (Count Module) وفلترة البلوكات والنصوص</div>
             </div>
           </div>
@@ -675,7 +646,7 @@
           </ul>
         </div>
         <div class="feature-media">
-          <img src="Picture4.png" alt="واجهة وحدة العد وجدول النتائج المفلترة" style="max-height: 460px; width: auto;" />
+          <img src="images/Picture4.png" alt="واجهة وحدة العد وجدول النتائج المفلترة" style="max-height: 460px; width: auto;" />
         </div>
       </div>
     </div>
@@ -709,14 +680,14 @@
           </div>
         </div>
         <div class="feature-media">
-          <img src="Picture5.png" alt="شكل 3 دليل واجهة QSpace Manager المحدثة" />
+          <img src="images/Picture5.png" alt="شكل 3 دليل واجهة QSpace Manager المحدثة" />
           <div class="sub-images-grid">
             <div>
-              <img src="Picture6.png" alt="نافذة تنظيف الرسم وغلق الأبواب Clean Drawing" />
+              <img src="images/Picture6.png" alt="نافذة تنظيف الرسم وغلق الأبواب Clean Drawing" />
               <div class="img-caption">الخطوة 1: تنظيف الرسم وغلق الأبواب</div>
             </div>
             <div>
-              <img src="Picture7.png" alt="نافذة الغرف السريعة ونقل البيانات عبر Excel" />
+              <img src="images/Picture7.png" alt="نافذة الغرف السريعة ونقل البيانات عبر Excel" />
               <div class="img-caption">الخطوة 2 و3: الغرف السريعة وربط الإكسيل</div>
             </div>
           </div>
@@ -736,7 +707,7 @@
           </ul>
         </div>
         <div class="feature-media">
-          <img src="Picture8.png" alt="شكل 4 دليل واجهة وحدة الحوائط QWalls" />
+          <img src="images/Picture8.png" alt="شكل 4 دليل واجهة وحدة الحوائط QWalls" />
           <div class="img-caption">شكل (4): واجهة وحدة الحوائط QWalls وأداة Hatches to Walls</div>
         </div>
       </div>
@@ -754,11 +725,7 @@
           </ul>
         </div>
         <div class="feature-media">
-          <img src="Picture9.png" alt="شكل 5 دليل واجهة QConcrete Manager" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <div class="missing-img-box" style="display: none;">
-            <strong>📸 مكان مخصص لصورة شكل (5): QConcrete Manager</strong>
-            <p style="font-size: 0.9rem; margin-top: 8px;">أرفق صورة نافذة QConcrete Manager في الرسالة القادمة أو احفظها باسم <code>Picture9.png</code> بجوار ملف الموقع لتظهر هنا تلقائياً.</p>
-          </div>
+          <img src="images/Picture9.png" alt="شكل 5 دليل واجهة QConcrete Manager" />
         </div>
       </div>
 
@@ -774,11 +741,7 @@
           </ul>
         </div>
         <div class="feature-media">
-          <img src="Picture10.png" alt="شكل 6 دليل واجهة MEP Quantity Manager" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <div class="missing-img-box" style="display: none;">
-            <strong>📸 مكان مخصص لصورة شكل (6): MEP Quantity Manager</strong>
-            <p style="font-size: 0.9rem; margin-top: 8px;">أرفق صورة نافذة MEP Quantity Manager في الرسالة القادمة أو احفظها باسم <code>Picture10.png</code> بجوار ملف الموقع لتظهر هنا تلقائياً.</p>
-          </div>
+          <img src="images/Picture10.png" alt="شكل 6 دليل واجهة MEP Quantity Manager" />
         </div>
       </div>
     </div>
@@ -799,7 +762,7 @@
       <!-- بطاقة QConcrete Manager -->
       <div style="background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 24px;">
         <h3 style="color: #f59e0b; margin-top: 0;">1. وحدة الإنشائي (QConcrete Manager)</h3>
-        <img src="Picture9.png" alt="QConcrete Manager Structure Interface" style="width: 100%; border-radius: 10px; margin: 15px 0; border: 1px solid #475569;" loading="lazy">
+        <img src="images/Picture9.png" alt="QConcrete Manager Structure Interface" style="width: 100%; border-radius: 10px; margin: 15px 0; border: 1px solid #475569;" loading="lazy">
         <ul style="line-height: 1.8; color: #cbd5e1; font-size: 0.95rem; padding-right: 20px;">
           <li><strong>(2 & 4) عناصر مساحية وطولية:</strong> حصر القواعد (<code>Footing</code>) والميدات (<code>Ground Beam</code>) عبر <code>PLine</code> أو <code>Rect</code> أو <code>Draw MLine</code>.</li>
           <li><strong>(3) خصائص متقدمة:</strong> إضافة التاجات (<code>Tags</code>)، التهشير (<code>Hatch</code>)، ونسب التسليح (<code>Rebar</code>).</li>
@@ -811,7 +774,7 @@
       <!-- بطاقة MEP Quantity Manager -->
       <div style="background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 24px;">
         <h3 style="color: #38bdf8; margin-top: 0;">2. وحدة الكهروميكانيكا (MEP Quantity Manager)</h3>
-        <img src="Picture10.png" alt="MEP Quantity Manager Interface" style="width: 100%; border-radius: 10px; margin: 15px 0; border: 1px solid #475569;" loading="lazy">
+        <img src="images/Picture10.png" alt="MEP Quantity Manager Interface" style="width: 100%; border-radius: 10px; margin: 15px 0; border: 1px solid #475569;" loading="lazy">
         <ul style="line-height: 1.8; color: #cbd5e1; font-size: 0.95rem; padding-right: 20px;">
           <li><strong>(2) خصائص مرنة:</strong> تصنيف حسب النوع (<code>Pipe</code>) والنظام (<code>Supply</code>) والقطر أو المقاس (<code>Dim: 110mm</code>).</li>
           <li><strong>(3) أوضاع إدخال ذكية:</strong> التبديل الفوري بين <code>Standard (Single Field)</code> ووضع الدكت <code>Duct (W x H)</code>.</li>
@@ -840,7 +803,7 @@
             <li><strong>تجميع القياسات المتطابقة في التفصيلي (Detailed):</strong> تُجمع العناصر المتطابقة في الأبعاد والوصف والغرفة والفتحات والطبقة في صف واحد مع تسجيل عددها في <code>Nos.</code> وضرب العدد في القياس، والاحتفاظ بمعرفات العناصر الأصلية (<code>#A1, #B2</code>) في عمود الملاحظات للمراجعة بأمر <code>FH</code>.</li>
             <li><strong>خصم الفتحات بالسالب تلقائياً:</strong> يتبع كل قياس إجمالي للحائط أو تشطيبه صفوف خصم للأبواب والنوافذ بالسالب للوصول لصافي الكمية بدقة محكمة.</li>
           </ul>
-          <button class="btn btn-primary" onclick="openDemoModal()">اطلب نسختك التجريبية لتجربة التصدير</button>
+          <a class="btn btn-primary" href="https://forms.gle/FWM8Jz4HBz6ASZHDA" onclick="openDemoForm(event)">اطلب نسختك التجريبية لتجربة التصدير</a>
         </div>
         <div class="feature-media">
           <img src="image_d6af07.png" alt="تقرير إكسيل الملخص الإجمالي PROJECT TOTAL SUMMARY من برنامج QManager" />
@@ -905,9 +868,9 @@
             <li><strong>الترخيص الدائم:</strong> لشراء ترخيص دائم، صدّر ملف <code>.qmrequest</code> من داخل نافذة التفعيل وأرسله إلى المطور لاستلام ملف الترخيص الموقع <code>.qmlicense</code>.</li>
           </ul>
           <div style="margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap;">
-            <button class="btn btn-primary" onclick="openDemoModal()">
+            <a class="btn btn-primary" href="https://forms.gle/FWM8Jz4HBz6ASZHDA" onclick="openDemoForm(event)">
               🚀 افتح نموذج طلب تجربة 30 يوماً الآن
-            </button>
+            </a>
             <a href="mailto:eng.micheal_fawzy@yahoo.com" class="btn btn-outline">
               📩 الدعم الفني: eng.micheal_fawzy@yahoo.com
             </a>
@@ -918,64 +881,30 @@
           <p style="color: var(--text-muted); font-size: 0.95rem; text-align: center;">
             لضمان حصول كل مهندس ومكتب فني على أحدث إصدار متوافق مع نسخة AutoCAD الخاصة به، وتقديم الدعم الفني المباشر أثناء فترة الـ 30 يوماً التجريبية، يتم إرسال رابط الحزمة الرسمية فور ملء نموذج الطلب القصير.
           </p>
-          <button class="btn btn-primary" style="width: 100%; margin-top: 16px;" onclick="openDemoModal()">
+          <a class="btn btn-primary" href="https://forms.gle/FWM8Jz4HBz6ASZHDA" onclick="openDemoForm(event)" style="width: 100%; margin-top: 16px;">
             تعبئة نموذج طلب الديمو (30 يوماً)
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Modal: Google Form 30-Day Demo Request -->
-  <div class="modal-overlay" id="demoModal">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeDemoModal()">×</button>
-      <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: #34d399;">
-        طلب نسخة تجريبية لمدة 30 يوماً (QManager 30-Day Demo)
+  <div class="modal-overlay" id="demoModal" onclick="closeDemoModal(event)">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
+      <button class="modal-close" type="button" aria-label="إغلاق النموذج" onclick="closeDemoModal()">×</button>
+      <h3 id="demoModalTitle" style="font-size: 1.35rem; margin: 0 48px 16px 0; color: #34d399;">
+        نموذج طلب النسخة التجريبية
       </h3>
-      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;">
-        املأ النموذج التالي ليصلك رابط تحميل حزمة <strong>QManager</strong> الرسمية ودليل التثبيت على بريدك الإلكتروني أو رقم الواتساب.
-      </p>
-
-      <!-- منطقة تضمين Google Form المباشر (تظهر تلقائياً عند وضع رابط Google Form الخاص بك) -->
-      <div id="googleFormEmbedContainer" style="display: none; margin-bottom: 20px;">
-        <iframe id="googleFormIframe" src="" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">جاري تحميل النموذج...</iframe>
-      </div>
-
-      <!-- نموذج مباشر جاهز يعمل فوراً ويرسل الطلب لبريد المطور أو يفتح Google Form -->
-      <form id="fallbackDemoForm" onsubmit="submitDemoRequest(event)">
-        <div class="form-group">
-          <label>الاسم بالكامل (Full Name) *</label>
-          <input type="text" id="reqName" required placeholder="مثال: م. أحمد محمود" />
-        </div>
-        <div class="form-group">
-          <label>البريد الإلكتروني (Email Address) *</label>
-          <input type="email" id="reqEmail" required placeholder="name@company.com" />
-        </div>
-        <div class="form-group">
-          <label>رقم الهاتف / واتساب (WhatsApp Number) *</label>
-          <input type="tel" id="reqPhone" required placeholder="+20 100 000 0000" />
-        </div>
-        <div class="form-group">
-          <label>الشركة / المكتب الهندسي والتخصص *</label>
-          <input type="text" id="reqCompany" required placeholder="مثال: مكتب استشاري - مهندس مكتب فني / QS" />
-        </div>
-        <div class="form-group">
-          <label>إصدار الأوتوكاد المستخدم (AutoCAD Version)</label>
-          <select id="reqCadVer">
-            <option value="AutoCAD 2024 - 2026">AutoCAD 2024 / 2025 / 2026 (Full Version)</option>
-            <option value="AutoCAD 2021 - 2023">AutoCAD 2021 / 2022 / 2023 (Full Version)</option>
-            <option value="AutoCAD 2018 - 2020">AutoCAD 2018 / 2019 / 2020 (Full Version)</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%;">
-          إرسال طلب التجربة المجانية (30 يوماً)
-        </button>
-      </form>
+      <iframe
+        id="googleFormIframe"
+        class="google-form-frame"
+        src="about:blank"
+        title="نموذج طلب النسخة التجريبية من QManager"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
     </div>
   </div>
-
-
 
   <footer>
     <div class="container">
@@ -985,51 +914,27 @@
   </footer>
 
   <script>
-    /**
-     * ضع رابط تضمين Google Form الخاص بك هنا بعد إنشائه على forms.google.com
-     * مثال: "https://docs.google.com/forms/d/e/1FAIpQLSf.../viewform?embedded=true"
-     */
-    const GOOGLE_FORM_EMBED_URL = "";
+    const GOOGLE_FORM_EMBED_URL = "https://docs.google.com/forms/d/e/1FAIpQLScwPKQDy4LIPf7Mk-_k_-7mGH2XTgwTJ_pnm6iqPwg3rUxBMw/viewform?embedded=true";
 
-    function openDemoModal() {
+    function openDemoForm(event) {
+      if (event) event.preventDefault();
       const modal = document.getElementById('demoModal');
-      const embedContainer = document.getElementById('googleFormEmbedContainer');
-      const iframe = document.getElementById('googleFormIframe');
-      const fallbackForm = document.getElementById('fallbackDemoForm');
-
-      if (GOOGLE_FORM_EMBED_URL.trim() !== "") {
-        iframe.src = GOOGLE_FORM_EMBED_URL;
-        embedContainer.style.display = 'block';
-        fallbackForm.style.display = 'none';
-      }
+      document.getElementById('googleFormIframe').src = GOOGLE_FORM_EMBED_URL;
       modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      document.querySelector('.modal-close').focus();
     }
 
-    function closeDemoModal() {
+    function closeDemoModal(event) {
+      if (event && event.target !== event.currentTarget) return;
       document.getElementById('demoModal').classList.remove('active');
+      document.getElementById('googleFormIframe').src = 'about:blank';
+      document.body.style.overflow = '';
     }
 
-    function submitDemoRequest(e) {
-      e.preventDefault();
-      const name = document.getElementById('reqName').value;
-      const email = document.getElementById('reqEmail').value;
-      const phone = document.getElementById('reqPhone').value;
-      const company = document.getElementById('reqCompany').value;
-      const cadVer = document.getElementById('reqCadVer').value;
-
-      const subject = encodeURIComponent(`طلب نسخة تجريبية 30 يوماً - QManager Demo Request (${name})`);
-      const body = encodeURIComponent(
-        `مرحباً بشمهندس ميشيل فوزي،\n\nأرغب في طلب النسخة التجريبية لمدة 30 يوماً لبرنامج QManager.\n\n` +
-        `- الاسم: ${name}\n` +
-        `- البريد الإلكتروني: ${email}\n` +
-        `- رقم الواتساب: ${phone}\n` +
-        `- الشركة / التخصص: ${company}\n` +
-        `- إصدار الأوتوكاد: ${cadVer}\n`
-      );
-
-      window.location.href = `mailto:eng.micheal_fawzy@yahoo.com?subject=${subject}&body=${body}`;
-      closeDemoModal();
-    }
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closeDemoModal();
+    });
   </script>
 </body>
 </html>
