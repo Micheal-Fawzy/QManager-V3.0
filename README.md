@@ -1,8 +1,8 @@
-# QManager V3.0 | برنامج كيو مانجر لحصر الكميات على الأوتوكاد
+# QManager V3.0 | حزمة متقدمة لحصر الكميات على الأوتوكاد
 **AutoCAD Quantity Takeoff & BOQ Automation Suite**
 Developed by **Eng. Micheal Fawzy** (`eng.micheal_fawzy@yahoo.com`)
 
-🔗 **Official Website & Free Trial:** [https://qmanager.github.io/](https://qmanager.github.io/)
+🔗 **Official Website & Free Trial:** [(https://micheal-fawzy.github.io/QManager-V3.0)]
 
 ## Modules (وحدات البرنامج)
 - **QSpace:** Architectural Rooms & Finishes Takeoff
